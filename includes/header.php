@@ -17,31 +17,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-top">
-            <span>📞 (41) 9 9826-0046</span>
-            <span>✉ contato@bdkvidracaria.com.br</span>
-        </div>
-        <div class="header-bar">
+    <header class = "header">
 
-            <div class="header-container">
-
-                <div class="header-logo"> <a href="index.php"><img src="img/logo.png" alt="BDK Esquadrias"></a>
-                </div>
-
-                <div class="logo-texto">
-                    <a href="index.php"><h1>BDK Esquadrias</h1></a>
+            <a href="index.php" title ="Pagina Inicial" class="header-logo">
+                <img src="img/logo.png" alt="BDK Esquadrias">
+                <div class = "header-texto">
+                    <h1>BDK Esquadrias</h1>
                     <p>Soluções em Vidros e Alumínio</p>
                 </div>
+            </a>
 
-            </div>
-
-            <nav>
-                <a href="index.php">Início</a>
-                <a href="index.php#servicos">Serviços</a>
-                <a href="sobre.php">Sobre</a>
+            <nav class = "header-nav">
+                <ul>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
+                    <li><a href="servicos.php">Servicos</a></li>
+                    <li><a href="agendamento.php" class="btn">Contato</a></li>
+                </ul>
             </nav>
 
-            <a href="agendamento.php" class="btn">Agendar Orçamento</a>
-        </div>
     </header>

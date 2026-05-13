@@ -1,7 +1,9 @@
 $primaryColor: #1a365d;
 $secondaryColor: #2d3748;
-$font: Arial, sans-serif;
-$font2: Tahoma, sans-serif;
+
+$font: sans-serif;
+$font2: Arial, sans-serif;
+
 $size: 18px;
 
 * {
@@ -14,81 +16,89 @@ body {
     font: $size $font;
 }
 
-header {
+.header {
     width: 100%;
-    height: auto;
+    padding: 15px 100px;
+
     position: fixed;
     top: 0;
-    z-index: 1000;
-    background: linear-gradient(to bottom, #1a365d, rgba(0,0,0,0));
+    left: 0;
 
-    .header-top {
-        background-color: $primaryColor;
-        color: white;
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 999;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    &-logo {
         display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
+        align-items: center;
+        gap: 20px;
+
+        text-decoration: none;
+
+        img {
+            width: 80px;
+        }
     }
 
-    .header-bar {
+    &-texto {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
+        flex-direction: column;
 
-        .header-container {
+        h1 {
+            color: $primaryColor;
+            font-size: 42px;
+            line-height: 1;
+        }
+
+        p {
+            color: $secondaryColor;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+    }
+
+    &-nav {
+
+        ul {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 20px;
 
-            .header-logo img {
-                width: 80px;
-            }
+            list-style: none;
 
-            .logo-texto {
-                text-align: left;
-
-                h1 {
-                    color: white;
-                    font-size: 1.4rem;
-                }
-
-                p {
-                    color: rgba(255, 255, 255, 0.8);
-                    font-size: 0.85rem;
-                }
+            li {
 
                 a {
                     text-decoration: none;
+                    color: $primaryColor;
+
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #2b6cb0;
+                    }
                 }
-            }
-        }
 
-        nav {
-            display: flex;
-            gap: 20px;
+                .btn {
+                    background: $primaryColor;
+                    color: white;
 
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1rem;
+                    padding: 12px 22px;
 
-                &:hover {
-                    text-decoration: underline;
+                    border-radius: 8px;
+
+                    &:hover {
+                        background: #2b6cb0;
+                        color: white;
+                    }
                 }
-            }
-        }
-
-        .btn {
-            background-color: white;
-            color: $primaryColor;
-            padding: 8px 16px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.85);
             }
         }
     }
