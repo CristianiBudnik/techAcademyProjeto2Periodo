@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #1a365d, rgba(0, 0, 0, 0));
+}
+header .header-top {
+  background-color: #1a365d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+header .header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header .header-bar .header-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .header-bar .header-container .header-logo img {
+  width: 80px;
+}
+header .header-bar .header-container .logo-texto {
+  text-align: left;
+}
+header .header-bar .header-container .logo-texto h1 {
+  color: white;
+  font-size: 1.4rem;
+}
+header .header-bar .header-container .logo-texto p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+}
+header .header-bar .header-container .logo-texto a {
+  text-decoration: none;
+}
+header .header-bar nav {
+  display: flex;
+  gap: 20px;
+}
+header .header-bar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+header .header-bar nav a:hover {
+  text-decoration: underline;
+}
+header .header-bar .btn {
+  background-color: white;
+  color: #1a365d;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .header-bar .btn:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/*# sourceMappingURL=style.css.map */
