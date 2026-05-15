@@ -1,59 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font: 18px sans-serif; }
-
-.header {
-  width: 100%;
-  padding: 15px 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); }
-  .header-logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none; }
-    .header-logo img {
-      width: 80px; }
-  .header-texto {
-    display: flex;
-    flex-direction: column; }
-    .header-texto h1 {
-      color: #1a365d;
-      font-size: 42px;
-      line-height: 1; }
-    .header-texto p {
-      color: #2d3748;
-      font-size: 18px;
-      margin-top: 5px; }
-  .header-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none; }
-    .header-nav ul li a {
-      text-decoration: none;
-      color: #1a365d;
-      transition: 0.3s; }
-      .header-nav ul li a:hover {
-        color: #2b6cb0; }
-    .header-nav ul li .btn {
-      background: #1a365d;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 8px; }
-      .header-nav ul li .btn:hover {
-        background: #2b6cb0;
-        color: white; }
-
-/*# sourceMappingURL=style.css.map */
+.navbar{
+  .navbar-brand{
+    img{
+      width: 90px;
+    }
+  }
+}
