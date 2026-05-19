@@ -1,7 +1,53 @@
 .navbar{
   .navbar-brand{
     img{
-      width: 90px;
+      width: 60px;
     }
+    
   }
+}
+
+.main{
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+.main h3{
+    font-family: "Mozzila";
+    font-size: 14px;
+    color: #3079B0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+.main h1{
+    font-family: "Urbanist";
+    font-weight: 900;
+    line-height: 80%;
+    margin-bottom: 20px;
+    font-size: 80px;
+  }
+
+.main p{
+    line-height: 1.5;
+  }
+
+.main .btn{
+  border-radius: 0;
+}
+.main .btn.btn-primary {
+  color: white !important;
+  background-color: #051127 !important;
+  border-color: #051127 !important;
+  opacity: 1 !important;
+  }
+.main .btn.btn-secondary {
+  background-color: white;
+  color: #051127;
+}
+
+.card{
+  margin-top: 10px;
+}
+
+.card-img-overlay{
+  height: auto;
 }
