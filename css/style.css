@@ -411,6 +411,118 @@ body.pagina-sobre .historia {
     padding: 3px 9px;
 }
 
+.btn-filtro {
+        background: transparent;
+        border: 1px solid #2a3a5c;
+        color: #adb5bd;
+        border-radius: 20px;
+        padding: 6px 18px;
+        font-size: 0.85rem;
+        transition: all 0.2s;
+    }
+    .btn-filtro:hover,
+    .btn-filtro.active {
+        background: #1a6fc4;
+        border-color: #1a6fc4;
+        color: #fff;
+    }
+
+    .produto-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 100%;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .produto-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .produto-img {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+        background: #e9ecef;
+    }
+    .produto-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .produto-sem-img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #adb5bd;
+        font-size: 0.85rem;
+    }
+    .produto-categoria-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(26, 111, 196, 0.85);
+        color: #fff;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 20px;
+    }
+
+    .produto-body {
+        padding: 20px;
+        color: #0d1b2a;
+    }
+    .produto-body h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    .produto-body p {
+        font-size: 0.875rem;
+        color: #6c757d;
+        margin-bottom: 14px;
+    }
+
+    .produto-atributos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .produto-tag {
+        background: #e9ecef;
+        color: #495057;
+        font-size: 0.75rem;
+        padding: 3px 10px;
+        border-radius: 20px;
+    }
+
+    .produto-item.oculto {
+        display: none;
+    }
+
+    .produto-img-count {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 3px 10px;
+        border-radius: 20px;
+    }
+    #carouselGaleria .carousel-item img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+        background: #000;
+        border-radius: 8px;
+    }
+
 .footer {
   background-color: #051127;
   border-top: 1px solid rgba(255, 255, 255, 0.08);

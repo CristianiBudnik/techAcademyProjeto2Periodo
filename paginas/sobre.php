@@ -75,7 +75,7 @@
 
             <div class="col-12 col-md-3 p-0">
                 <div class="card-bdk-tecnico">
-                    <img src="img/pessoas/dener.jpeg" alt="Dener">
+                    <img src="img/pessoas/denner.jpeg" alt="Dener">
                     <div class="card-bdk-info-tecnico">
                         <span class="card-bdk-cargo-tecnico">Montador e Instalador</span>
                         <p class="card-bdk-nome-tecnico">Dener</p>
