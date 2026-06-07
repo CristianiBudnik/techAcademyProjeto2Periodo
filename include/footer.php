@@ -1,13 +1,13 @@
-    <footer class="footer">
+    <footer class="footer ms-6 ms-md-0">
         <div class="container">
-            <div class="row g-4">
+            <div class="row">
  
-                <div class="col-12 col-md-5" data-aos="fade-up">
+                <div class="col-12 col-md-4" data-aos="fade-up">
                     <h3>BDK Esquadrias</h3>
                     <p>Vidraçaria e esquadrias de alumínio com precisão, acabamento e confiança desde o primeiro corte até a instalação final.</p>
                 </div>
  
-                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-4 col-md-0" data-aos="fade-up" data-aos-delay="100">
                     <p class="footer-titulo">Navegação</p>
                     <a href="index.php?page=inicio">Início</a>
                     <a href="index.php?page=sobre">Sobre</a>

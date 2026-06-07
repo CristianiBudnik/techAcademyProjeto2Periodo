@@ -1,10 +1,13 @@
+<?php
+    $paginaAtual = $_GET["page"] ?? "inicio";
+    $page = "paginas/{$paginaAtual}.php";
+
+    include "include/conexao.php";
+?>
+
 <?php include "include/header.php"; ?>
 
 <?php
-
-    $page = $_GET["page"] ?? "inicio";
-    $page = "paginas/{$page}.php";
-
     if (file_exists($page))
         include $page;
     else
