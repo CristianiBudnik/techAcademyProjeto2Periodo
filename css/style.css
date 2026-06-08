@@ -270,14 +270,6 @@ body.pagina-sobre .historia {
     position: relative;
 }
  
-.card-bdk-socio::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #1a6fc4, #2484e4);
-}
- 
 .card-bdk-socio:hover {
     transform: translateY(-5px);
     border-color: #1a6fc4;
@@ -285,15 +277,11 @@ body.pagina-sobre .historia {
  
 .card-bdk-socio img {
     width: 100%;
-    aspect-ratio: 3/4;
     object-fit: cover;
     object-position: top;
     display: block;
-    filter: grayscale(15%);
     transition: filter .3s;
 }
- 
-.card-bdk-socio:hover img { filter: grayscale(0%); }
  
 .card-bdk-info {
     padding: 1.4rem 1.6rem 1.6rem;
@@ -522,6 +510,106 @@ body.pagina-sobre .historia {
         background: #000;
         border-radius: 8px;
     }
+
+.contato-card {
+    background: #0d1f38;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 36px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 300px;
+}
+
+.contato-icone {
+    width: 42px;
+    height: 42px;
+    background: rgba(48, 121, 176, 0.15);
+    border: 1px solid rgba(48, 121, 176, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3079B0;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.contato-label {
+    font-size: 11px;
+    color: #3079B0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    text-align: justify;
+}
+
+.contato-valor {
+    font-size: 15px;
+    color: #e8edf4;
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contato-whatsapp {
+    background: #0d1f38;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 36px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-whatsapp-icone {
+    font-size: 2.5rem;
+    color: #25D366;
+    margin-bottom: 16px;
+}
+
+.contato-whatsapp h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contato-whatsapp p {
+    font-size: 14px;
+    color: #a0aec0;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    background: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.2s;
+    width:fit-content;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+    color: #fff;
+    transform: translateY(-2px);
+}
 
 .footer {
   background-color: #051127;

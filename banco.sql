@@ -66,6 +66,17 @@ INSERT INTO produto (id_categoria, nome, descricao) VALUES
 
 
 INSERT INTO produto_imagem (id_produto, url, ordem) VALUES
+(1, 'img/cobertura/cobertura.jpeg', 1),
+(1, 'img/cobertura/cobertura2.jpeg', 2),
+(1, 'img/cobertura/cobertura3.jpeg', 3),
+(1, 'img/cobertura/cobertura4.jpeg', 4),
+(1, 'img/cobertura/cobertura5.jpeg', 5),
+(1, 'img/cobertura/cobertura6.jpeg', 6),
+(1, 'img/cobertura/cobertura7.jpeg', 7),
+(1, 'img/cobertura/coberturaEspelhada.jpeg', 8),
+(1, 'img/cobertura/coberturaEspelhada2.jpeg', 9),
+(1, 'img/cobertura/coberturaEspelhada3.jpeg', 10),
+(1, 'img/cobertura/coberturaVideo.mp4', 11),
 (2, 'img/boxBanheiro/box1.jpeg', 1),
 (2, 'img/boxBanheiro/box2.jpeg', 2),
 (2, 'img/boxBanheiro/box3.jpeg', 3),

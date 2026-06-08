@@ -1,4 +1,4 @@
-<section class="historia" data-aos="fade-right">
+<section class="historia px-3 px-md-0" data-aos="fade-right">
 
     <div class="container">
         <div class="row align-items-center justify-content-center mb-5" data-aos="fade-up">
@@ -18,6 +18,12 @@
     </div>
 
     <div class="container" data-aos="fade-up">
+
+    <div class="bdk-divider mb-5">
+            <div class="bdk-divider-line"></div>
+            <span class="bdk-divider-label">Equipe</span>
+            <div class="bdk-divider-line"></div>
+        </div>
 
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-md-8 text-center">

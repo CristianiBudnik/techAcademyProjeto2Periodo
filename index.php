@@ -3,6 +3,7 @@
     $page = "paginas/{$paginaAtual}.php";
 
     include "include/conexao.php";
+    include "include/funcoes.php";
 ?>
 
 <?php include "include/header.php"; ?>
