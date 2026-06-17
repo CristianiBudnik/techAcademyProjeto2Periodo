@@ -12,20 +12,15 @@ const marcarLinkAtivo = () => {
 
 marcarLinkAtivo();
 
-function filtrar(categoria, btn) {
-    
-        document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        document.querySelectorAll('.produto-item').forEach(item => {
-            if (categoria === 'todos' || item.dataset.categoria === categoria) {
-                item.classList.remove('oculto');
-            } else {
-                item.classList.add('oculto');
-            }
-        });
-    }
-
+function filtrar(categoria) {
+    document.querySelectorAll('.produto-item').forEach(item => {
+        if (categoria === 'todos' || item.dataset.categoria === categoria) {
+            item.classList.remove('oculto');
+        } else {
+            item.classList.add('oculto');
+        }
+    });
+}
 
 function abrirGaleria(imagens, titulo) {
         const inner = document.getElementById('carouselInner');
@@ -35,8 +30,7 @@ function abrirGaleria(imagens, titulo) {
             inner.innerHTML += `
                 <div class="carousel-item ${i === 0 ? 'active' : ''}">
                     <img src="${url}" alt="${titulo}">
-                </div>
-            `;
+                </div>`;
         });
 
         document.getElementById('modalTitulo').textContent = titulo;

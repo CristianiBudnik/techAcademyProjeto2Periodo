@@ -63,7 +63,7 @@
                             <a class="nav-link" href="index.php?page=contato">Contato</a>
                         </li>
                         <li class="nav-item nav-item-orcamento ms-lg-2">
-                            <a class="nav-link" href="index.php?page=solicitarOrcamento">Solicitar Orçamento</a>
+                            <a class="nav-link" href="https://wa.me/5541998260046?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">Solicitar Orçamento</a>
                         </li>
                         </li>
                     </ul>
