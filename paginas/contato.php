@@ -19,7 +19,8 @@
                         </div>
                         <div>
                             <p class="contato-label">Telefone</p>
-                            <p class="contato-valor">(41) 9 9826-0046</p>
+                            <p class="contato-valor">(41) 9 9826-0046 - Everton</p>
+                            <p class="contato-valor">(41) 9 9553-2732 - Robson</p>
                         </div>
                     </div>
 
@@ -46,18 +47,26 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="contato-whatsapp">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-up"
+                data-aos-delay="100">
+                
+                <div class="contato-whatsapp d-flex flex-column align-items-center text-center w-100">
                     <i class="fa-brands fa-whatsapp contato-whatsapp-icone"></i>
                     <h3>Prefere pelo WhatsApp?</h3>
-                    <p>Clique no botão abaixo e fale diretamente com um de nossos consultores. Atendimento rápido e personalizado.</p>
-                    <a href="https://wa.me/5541998260046?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
-                       target="_blank" 
-                       class="btn-whatsapp mt-3 d-inline-flex align-items-center">
-                        <i class="fa-brands fa-whatsapp me-2"></i> Falar no WhatsApp
+                    <p>Clique no botão abaixo e fale diretamente com um de nossos consultores. Atendimento rápido e
+                        personalizado.</p>
+
+                    <a href="https://wa.me/5541998260046?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                        target="_blank" class="btn-whatsapp mt-3 mb-2">
+                        <i class="fa-brands fa-whatsapp me-2"></i> Falar com Everton
+                    </a>
+                    <a href="https://wa.me/5541995532732?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                        target="_blank" class="btn-whatsapp mt-3">
+                        <i class="fa-brands fa-whatsapp me-2"></i> Falar com Robson
                     </a>
                 </div>
             </div>
+
 
         </div>
     </div>
