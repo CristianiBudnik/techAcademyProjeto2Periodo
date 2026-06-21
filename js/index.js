@@ -12,16 +12,6 @@ const marcarLinkAtivo = () => {
 
 marcarLinkAtivo();
 
-function filtrar(categoria) {
-    document.querySelectorAll('.produto-item').forEach(item => {
-        if (categoria === 'todos' || item.dataset.categoria === categoria) {
-            item.classList.remove('oculto');
-        } else {
-            item.classList.add('oculto');
-        }
-    });
-}
-
 function abrirGaleria(imagens, titulo) {
         const inner = document.getElementById('carouselInner');
         inner.innerHTML = '';

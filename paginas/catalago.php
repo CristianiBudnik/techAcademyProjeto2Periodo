@@ -8,30 +8,34 @@
             </div>
         </div>
 
+        <?php $categoriaAtual = $_GET['categoria'] ?? 'todos'; ?>
+
         <div class="row mb-4 ">
-            <div class="col-3">
-                <select class="form-select fw-bold text-uppercase" onchange="filtrar(this.value)">
-                    <option value="todos">Filtar por Categoria</option>
-                    <?php apresentarOpcoesFiltro($pdo); ?>
+            <div class="col-12 col-sm-6 col-md-3">
+                <select class="form-select fw-bold text-uppercase" onchange="window.location.href = 'index.php?page=catalago&categoria=' + this.value">
+                    <option value="todos" <?= $categoriaAtual === 'todos' ? 'selected' : '' ?>>Filtar por Categoria</option>
+                    <?php apresentarOpcoesFiltro($pdo, $categoriaAtual); ?>
                 </select>
             </div>
         </div>
 
         <div class="row g-3 text-center text-uppercase" id="lista-produtos">
-            <?php $produtos = buscarProdutos($pdo); ?>
+            <?php
+            $produtos = buscarProdutos($pdo);
+            $produtosFiltrados = filtrarProdutosPorCategoria($produtos, $categoriaAtual);
+            ?>
 
-            <?php if (empty($produtos)): ?>
+            <?php if (empty($produtosFiltrados)): ?>
                 <div class="col-12 text-center text-white">
-                    <p>Nenhum produto encontrado.</p>
+                    <p>Nenhum produto encontrado nessa categoria.</p>
                 </div>
             <?php else: ?>
 
-                <?php foreach ($produtos as $p):
-                    $filtro = formatarParaFiltro($p['categoria']);
+                <?php foreach ($produtosFiltrados as $p):
                     $imagens = buscarImagensPorProduto($pdo, $p['id']);
                     $atributos = buscarAtributosPorProduto($pdo, $p['id']);
                     ?>
-                    <div class="col-12 col-md-4 produto-item" data-categoria="<?= $filtro ?>">
+                    <div class="col-12 col-md-4 produto-item">
                         <div class="produto-card">
                             <?php apresentarImagemProduto($imagens, $p); ?>
                             <?php apresentarBodyProduto($p, $atributos); ?>

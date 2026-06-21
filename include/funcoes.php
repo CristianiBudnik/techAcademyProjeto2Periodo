@@ -8,7 +8,13 @@ function buscarProdutos(PDO $pdo): array
         INNER JOIN categoria c ON c.id = p.id_categoria
         ORDER BY c.nome, p.nome
     ");
-    return $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+    $produtos = [];
+    while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
+        $produtos[] = $linha;
+    }
+
+    return $produtos;
 }
 
 function buscarCategorias(PDO $pdo): array
@@ -19,6 +25,10 @@ function buscarCategorias(PDO $pdo): array
 
 function buscarImagensPorProduto(PDO $pdo, int $id): array
 {
+    if ($id <= 0) {
+        return [];
+    }
+
     $consulta = $pdo->query("
         SELECT url FROM imagem
         WHERE id_produto = $id
@@ -29,6 +39,10 @@ function buscarImagensPorProduto(PDO $pdo, int $id): array
 
 function buscarAtributosPorProduto(PDO $pdo, int $id): array
 {
+    if ($id <= 0) {
+        return [];
+    }
+
     $consulta = $pdo->query("
         SELECT a.nome, pa.valor
         FROM produto_atributo pa
@@ -47,23 +61,28 @@ function formatarParaFiltro(string $texto): string
 
 function filtrarProdutosPorCategoria(array $produtos, string $categoria): array
 {
+    if (empty($produtos)) {
+        return [];
+    }
+
     if ($categoria === 'todos') {
         return $produtos;
     }
+
     return array_filter($produtos, function ($p) use ($categoria) {
         return formatarParaFiltro($p['categoria']) === $categoria;
     });
 }
 
 
-
-function apresentarOpcoesFiltro(PDO $pdo): void
+function apresentarOpcoesFiltro(PDO $pdo, string $categoriaAtual = 'todos'): void
 {
     $categorias = buscarCategorias($pdo);
     foreach ($categorias as $cat):
         $filtro = formatarParaFiltro($cat['nome']);
+        $selecionado = $filtro === $categoriaAtual ? 'selected' : '';
 ?>
-        <option value="<?= $filtro ?>">
+        <option value="<?= $filtro ?>" <?= $selecionado ?>>
             <?= htmlspecialchars($cat['nome']) ?>
         </option>
 <?php
