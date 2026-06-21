@@ -18,7 +18,7 @@
 
             <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <p class="footer-titulo">Contato</p>
-                <p class="footer-contato"><i class="fa fa-phone me-2 text-secondary"></i>(41) 9 9826-0046</p>
+                <p class="footer-contato"><i class="fa fa-phone me-2 text-secondary"></i>(41) 9 9826-0046 / (41) 9 9553-2732</p>
                 <p class="footer-contato"><i class="fa fa-envelope me-2 text-secondary"></i>contato@bdkesquadrias.com.br
                 </p>
                 <p class="footer-contato"><i class="fa fa-clock me-2 text-secondary"></i>Seg — Sex · 8h às 18h</p>
